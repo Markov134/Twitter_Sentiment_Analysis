@@ -10,7 +10,7 @@ df = pd.read_csv('data/archive.zip', encoding='latin-1', header=None)
 df = df[[0, 5]]
 df.columns = ['polarity', 'text']
 print(df.head())
-#dataset
+#Load the sentiment140 dataset
 
 df = df[df.polarity != 2]
 #only positive and negative
